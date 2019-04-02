@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadania</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 100vh;
+        padding-left: 20px;
+    }
+
+    p {
+        margin: 10px 0;
+    }
+
+    .day {
+        color: red;
+    }
+
+    .today {
+        color: blue;
+    }
+</style>
+
+<body>
+    <p>10. <a target="_blank" href="https://codepen.io/zwodek01/pen/ROPOyB">CodePen</a></p>
+    <p>11. <a target="_blank" href="https://codepen.io/zwodek01/pen/dLoLQe">CodePen</a></p>
+    <p>12. <a target="_blank" href="https://codepen.io/zwodek01/pen/VNLNGx">CodePen</a></p>
+    <p>15. <a target="_blank" href="https://codepen.io/zwodek01/pen/jRPRdP">CodePen</a></p>
+    <p>16. <a target="_blank" href="https://codepen.io/zwodek01/pen/KYpYEV">CodePen</a></p>
+    <p>18. <a target="_blank" href="https://codepen.io/zwodek01/pen/QPbPPb">CodePen</a></p>
+    <p>21. <a target="_blank" href="https://codepen.io/zwodek01/pen/yrNrWJ">CodePen</a></p>
+    <h2 class="day">01.04.2019</h2>
+    <p>22. <a target="_blank" href="https://codepen.io/zwodek01/pen/OGVGYe">CodePen</a></p>
+    <p>25. <a target="_blank" href="https://codepen.io/zwodek01/pen/qwdwzo">CodePen</a></p>
+    <p>26. <a target="_blank" href="https://codepen.io/zwodek01/pen/LvVvwm">CodePen</a></p>
+    <p>27. <a target="_blank" href="https://codepen.io/zwodek01/pen/NmqVKP">CodePen</a></p>
+    <p>28. <a target="_blank" href="https://codepen.io/zwodek01/pen/VNLOZE">CodePen</a></p>
+    <h2 class="today" id="today"></h2>
+    <script>
+        const today = document.getElementById("today");
+        const date = new Date();
+        today.innerText = `Today is ${date.toDateString()}`;
+    </script>
+
+</body>
+
+</html>
