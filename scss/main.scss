@@ -5,7 +5,7 @@
 
 // varabiles
 $colorFont:black;
-$paddingAll: 10px;
+$paddingAll: 20px;
 
 //mixins
 @mixin widthMarginCenterText {
@@ -51,10 +51,11 @@ body {
         font-size: 15px;
         padding: $paddingAll;
         margin: 15px;
-        background-color: aquamarine;
-        border: none;
+        background-color: #7FFFD4;
+        border: 1px solid #7FFFD4;
         border-radius: 20px;
         font-family: 'Raleway', sans-serif;
+        transition: .3s;
     }
 
     &__nonVisible {
@@ -70,5 +71,19 @@ body {
         margin: 1em 0;
         padding: 1em;
     }
+}
 
+.footer {
+    &__text {
+        @include widthMarginCenterText();
+
+    }
+}
+
+@media (min-width: 1367px) {
+    .content__button:hover {
+        cursor: pointer;
+        background-color: #fff;
+        border-color: #000;
+    }
 }
