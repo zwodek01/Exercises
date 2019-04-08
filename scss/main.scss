@@ -21,6 +21,7 @@ body {
 .intro {
     @include widthMarginCenterText();
 
+
     &__title {
         font-size: 50px;
         font-family: 'Raleway', sans-serif;
@@ -40,6 +41,23 @@ body {
 .content {
     @include widthMarginCenterText();
     padding: $paddingAll;
+    position: relative;
+
+    .fa-arrow-up {
+        position: fixed;
+        right: 10px;
+        top: 15px;
+        color: #000;
+        font-size: 24px;
+    }
+
+    .fa-arrow-down {
+        position: fixed;
+        right: 10px;
+        bottom: 15px;
+        color: #000;
+        font-size: 24px;
+    }
 
     &__text {
         padding: $paddingAll;
