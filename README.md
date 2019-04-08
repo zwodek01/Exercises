@@ -1,3 +1,2 @@
 # Exercises
-
-https://zwodek01.github.io/Exercises/
+https://zwodek01.github.io/Exercises---JavaScript/.
